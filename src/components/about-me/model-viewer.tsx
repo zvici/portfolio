@@ -44,7 +44,7 @@ export default function ModelViewer() {
           <AnimatedModel />
           <Environment preset="sunset" />
         </Suspense>
-        <OrbitControls enableZoom={true} />
+        <OrbitControls enableZoom={false} />
         <mesh rotation={[0, 0, 0]} position={[0, -1.11, 0]}>
           <cylinderGeometry args={[1.5, 1.5, 0.2, 64]} />
           <meshStandardMaterial color="#444" />
