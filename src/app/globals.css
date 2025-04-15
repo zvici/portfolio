@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: rgb(5, 6, 8);
   --foreground: #171717;
 }
 
@@ -23,4 +23,9 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+.dot-grid-bg {
+  background: linear-gradient(90deg, black 21px, transparent 1%) center / 22px
+      22px,
+    linear-gradient(black 21px, transparent 1%) center / 22px 22px, white;
 }
