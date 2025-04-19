@@ -20,7 +20,7 @@ function AnimatedModel() {
 
       if (firstAction) {
         firstAction.setLoop(THREE.LoopRepeat, Infinity);
-        firstAction.timeScale = 0.7;
+        firstAction.timeScale = 0.5; // Adjust the speed of the animation
         firstAction.play();
       }
     }
@@ -44,7 +44,7 @@ export default function ModelViewer() {
           <AnimatedModel />
           <Environment preset="sunset" />
         </Suspense>
-        <OrbitControls enableZoom={false} />
+        <OrbitControls enableZoom={false} enableRotate={false} />
         <mesh rotation={[0, 0, 0]} position={[0, -1.11, 0]}>
           <cylinderGeometry args={[1.5, 1.5, 0.2, 64]} />
           <meshStandardMaterial color="#444" />

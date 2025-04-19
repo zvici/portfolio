@@ -8,7 +8,7 @@ export default function Welcome() {
           <TypingText />
         </div>
         <div className="col-span-2 border-r border-gray-700 min-[896px]:col-span-3 " />
-        <div className="col-span-2 hidden border-r border-t border-gray-700 max-md:order-last lg:col-span-1 lg:block lg:border-t-0 dot-grid-bg" />
+        <div className="col-span-2 hidden border-r border-t border-gray-700 max-md:order-last lg:col-span-1 lg:block lg:border-t-0" />
       </div>
     </section>
   );
